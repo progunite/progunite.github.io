@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-	<head>
+<head>
 	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,10 +31,9 @@
 	<link href="css/base.css" rel="stylesheet">
 </head>
 
-	<body>
-		<div itemscope itemtype="http://schema.org/LocalBusiness" class="container">
-
-		<header class="header">
+<body>
+ <div itemscope itemtype="http://schema.org/LocalBusiness" class="container">
+  <header class="header">
 	<div class="header__photo header__photo--left"></div>
 	<div class="header__photo header__photo--right"></div>
 	<a href="index.html">
@@ -44,31 +43,51 @@
 		</div>
 	</a>
 </header>
+  <nav>
+    <a class="menu__toggle"></a>
+    <ul class="menu nav nav-pills  nav-justified">
+      <li><a href="/">Início</a></li>
+      <li><a href="services.html">Serviços</a></li>
+      <li><a href="techniques.html">Técnicas</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li class="active"><a href="contacts.html">Contactos</a></li>
+    </ul>
+  </nav>
 
-		<nav>
-	<a class="menu__toggle"></a>
-	<ul class="menu nav nav-pills  nav-justified">
-		<li class="active"><a href="index.html">Início</a></li>
-		<li><a href="services.html">Serviços</a></li>
-		<li><a href="techniques.html">Técnicas</a></li>
-		<li><a href="gallery.html">Galeria</a></li>
-		<li><a href="contacts.html">Contactos</a></li>
-	</ul>
-</nav>
+  <div class="jumbotron text-center">
+    <h1>Contactos</h1>
+    <h2>E-Mail</h2>
+    <p>
+     <a href="mailto:progunite@gmail.com">
+      <span itemprop="email">progunite@gmail.com</span>
+    </a>
+  </p>
 
-		<div class="jumbotron">
-			<h1><span itemprop="name">Progunite</span></h1>
-			<p>A Progunite uma empresa ligada à construção civil, especializada na projecção de betão via seca. Fundada em 1997, é uma empresa com mais de 13 anos de existência no mercado, o que indica a sua elevada experiência neste serviço. Também somos a empresa pioneira na prestação deste serviço.</p>
-			<p>Tem nos seus quadros, profissionais com cerca de 30 anos de experiência na projecção de betão via seca. Isto confere à nossa empresa um serviço com qualidade acima da média e uma garantia de execução do serviço.</p>
-		</div>
+  <h2>Telefones</h2>
+  <p>Lázaro Morais - <span itemprop="telephone">+351 96 406 33 15</span></p>
+  <p>Agostinho Teixeira - <span itemprop="telephone">+351 96 616 59 66</span></p>
 
-		<footer class="copyright">
+  <h2>Localização</h2>
+  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+   <p itemprop="streetAddress">Rua Dos Mandarins Nº 1</p>
+   <p itemprop="addressLocality">Cabra-Figa</p>
+   <p>
+    <span itemprop="postalCode">2785-156</span>
+    <span itemprop="addressRegion"> São Domingos de Rana</span>
+  </p>
+</span>
+<div class="embed-responsive embed-responsive-16by9">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199154.18437126177!2d-9.334784999999995!3d38.74571561787324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQ0JzQzLjkiTiA5wrAyMCcwNS4yIlc!5e0!3m2!1sen!2sus!4v1406718924520"></iframe>
+</div>
+</div>
+
+<footer class="copyright">
 <p>&copy; 2010 - 2014 <strong><span itemprop="name">Progunite</span> Lda.</strong></p>
 </footer>
 
-	</div>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script>
 	(function(){
 		$(".menu__toggle").click(function(){
 			$(document.body).toggleClass('menu--active');
